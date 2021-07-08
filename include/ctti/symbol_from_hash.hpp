@@ -3,13 +3,10 @@
 
 #include <cstddef>
 
-namespace ctti
-{
+namespace ctti {
 
-template<std::uint64_t Hash>
-using symbol_from_hash = decltype(ctti_symbol_from_hash(ctti::meta::uint64_t<Hash>()));
+template <std::uint64_t Hash> using symbol_from_hash = decltype(ctti_symbol_from_hash(ctti::meta::uint64_t<Hash>()));
 
 }
-
 
 #endif // CTTI_SYMBOL_FROM_HASH_HPP
