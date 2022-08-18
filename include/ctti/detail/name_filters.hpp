@@ -49,7 +49,7 @@ constexpr const char *find_ith(const ctti::detail::cstring &name, const ctti::de
 }
 
 constexpr const char *find_last(const ctti::detail::cstring &name, const ctti::detail::cstring &substring) {
-    return find_ith_impl(name, substring, name.end(), -1, true);
+    return find_ith_impl(name, substring, name.end(), static_cast<std::size_t>(-1), true);
 }
 
 constexpr const char *find(const ctti::detail::cstring &name, const ctti::detail::cstring &substring) {
